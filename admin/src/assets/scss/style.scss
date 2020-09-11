@@ -1,0 +1,814 @@
+@import 'reset';
+@import 'variables';
+
+
+.page-setup {
+	width: 100%;
+	background-color: $bg-color;
+	padding: 20px;
+}
+
+.page-inner-setup {
+	width: 95%;
+	margin: 0px auto;
+	padding: 20px;
+	box-sizing: border-box;
+	background-color: $tertiary-white;
+}
+
+/** Navbar **/
+.navbar-bg-color {
+	background-color: $primary-color;
+}
+
+.main-nav {
+	height: 50px;
+}
+
+.container {
+	min-width: 98% !important;
+}
+
+.navbar {
+	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.5);
+}
+
+.navbar .nav-item {
+	padding-right: 40px;
+}
+
+.navbar a.nav-link {
+	color: $tertiary_white;
+	font-size: 14px;
+	padding-right: 20px;
+	text-transform: uppercase;
+}
+
+.navbar .navbar-brand {
+	color: $tertiary_white;
+}
+
+.navbar a.nav-link i.fa.fa-bell, i.fa.fa-cog {
+	font-size: 18px;
+}
+
+.navbar .badge {
+	border-radius: 9px;
+}
+  
+.navbar #notification {
+	  font-size: 11px;
+	  background: #292929;
+	  color: $tertiary_white;
+	  padding: 2px 5px;
+	  vertical-align: top;
+}
+
+/** Breadcrumb **/
+.breadcrumb {
+	background-color: #ffffff !important;
+	height: 50px;
+	line-height: 50px;	
+}
+
+.breadcrumb .breadcrumb-inner{
+	width: 95%;
+	margin: 0px auto;
+}
+
+/** Dashboard **/
+.dashboard {
+	@extend .page-setup;
+}
+
+.dashboard .dashboard-inner {
+	@extend .page-inner-setup;
+}
+
+.dashboard .custom-card {
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 80px;
+	padding: 10px;
+	color: #ffffff;
+	margin-bottom: 15px;
+	border-radius: 5px;
+}
+
+.dashboard .custom-card.first {
+	background: #2193b0 !important;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.dashboard .custom-card.second {
+	background: #11998e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.dashboard .custom-card.third {
+	background: #f953c6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.custom-card-inner h2 {
+	  font-size: 18px;
+}
+
+.custom-card-inner h3 {
+	  font-size: 24px;
+	  font-weight: lighter;
+}
+
+.custom-card-inner h6 {
+	  font-size: 12px;
+	  font-weight: bold;
+}
+
+.custom-card-inner .decimal-point {
+	  font-size: 14px;
+}
+
+.dashboard-inner .admin-profile {
+	text-align: center;
+}
+
+.dashboard-inner .admin-profile h6 {
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+.dashboard-inner .left {
+	// background-color: #f5f5f5;
+	margin-bottom: 15px;
+	padding: 15px 10px;
+}
+
+.dashboard-inner .left ul {
+	list-style: none;
+}
+
+.dashboard-inner .left ul li i.fa.fa-tachometer, i.fa.fa-gift, i.fa.fa-shopping-basket, i.fa.fa-cog, i.fa.fa-line-chart {
+	width: 15%;
+}
+
+.dashboard-inner .left ul li {
+	font-size: 20px;
+	padding: 10px 5px;
+	cursor: pointer;
+}
+
+.dashboard-inner .left ul li .link {
+	color: #000;
+}
+
+.dashboard-inner .left ul li:hover {
+	background-color: $secondary-color;
+	border-radius: 5px;
+}
+
+/** Orders **/
+.orders {
+	@extend .page-setup;
+}
+
+.orders .orders-inner {
+	@extend .page-inner-setup;
+}
+
+.orders-inner .admin-profile {
+	text-align: center;
+}
+
+.orders-inner .admin-profile h6 {
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+.orders-inner .left {
+	margin-bottom: 15px;
+	padding: 15px 10px;
+}
+
+.orders-inner .left ul {
+	list-style: none;
+}
+
+.orders-inner .left ul li i.fa.fa-tachometer, i.fa.fa-gift, i.fa.fa-shopping-basket, i.fa.fa-cog, i.fa.fa-line-chart {
+	width: 15%;
+}
+
+.orders-inner .left ul li {
+	font-size: 20px;
+	padding: 10px 5px;
+	cursor: pointer;
+	color: #000;
+}
+
+.orders-inner .left ul li .link {
+	color: #000;
+}
+
+.orders-inner .left ul li:hover {
+	background-color: $secondary-color;
+	border-radius: 5px;
+}
+
+.orders-inner h2 {
+	padding-bottom: 15px;
+}
+
+.orders-inner .right {
+	padding-top: 15px;
+}
+
+.right .order-info {
+	width: 100%;
+	height: 70px;
+	background-color: #f5f5f5;
+	border-radius: 5px;
+	box-sizing: border-box;
+	padding: 8px;
+	text-align: center;
+}
+
+.right .order-info .right {
+	padding: 10px 20px;
+}
+
+/** Store **/
+.store {
+	@extend .page-setup;
+}
+
+.store .store-inner {
+	@extend .page-inner-setup;
+}
+
+.store-inner .admin-profile {
+	text-align: center;
+}
+
+.store-inner .admin-profile h6 {
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+.store-inner .left {
+	// background-color: #f5f5f5;
+	margin-bottom: 15px;
+	padding: 15px 10px;
+}
+
+.store-inner .left ul {
+	list-style: none;
+}
+
+.store-inner .left ul li i.fa.fa-tachometer, i.fa.fa-gift, i.fa.fa-shopping-basket, i.fa.fa-cog, i.fa.fa-line-chart {
+	width: 15%;
+}
+
+.store-inner .left ul li {
+	font-size: 20px;
+	padding: 10px 5px;
+	cursor: pointer;
+}
+
+.store-inner .left ul li .link {
+	color: #000;
+}
+
+.store-inner .left ul li:hover {
+	background-color: $secondary-color;
+	border-radius: 5px;
+}
+
+.store-inner h2 {
+	padding-bottom: 20px;
+}
+
+.store-inner .col-md-3 {
+	margin-bottom: 15px;
+}
+
+/** Categories **/
+.categories {
+	@extend .page-setup;
+}
+
+.categories .categories-inner {
+	@extend .page-inner-setup;
+}
+
+.categories-inner .admin-profile {
+	text-align: center;
+}
+
+.categories-inner .admin-profile h6 {
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+.categories-inner .left {
+	// background-color: #f5f5f5;
+	margin-bottom: 15px;
+	padding: 15px 10px;
+}
+
+.categories-inner .left ul {
+	list-style: none;
+}
+
+.categories-inner .left ul li i.fa.fa-tachometer, i.fa.fa-gift, i.fa.fa-shopping-basket, i.fa.fa-cog, i.fa.fa-line-chart {
+	width: 15%;
+}
+
+.categories-inner .left ul li {
+	font-size: 20px;
+	padding: 10px 5px;
+	cursor: pointer;
+}
+
+.categories-inner .left ul li .link {
+	color: #000;
+}
+
+.categories-inner .left ul li:hover {
+	background-color: $secondary-color;
+	border-radius: 5px;
+}
+
+.categories-inner .right h2 {
+	padding-bottom: 15px;
+}
+
+.categories-inner .category-name, .category-submit {
+	width: 100%;
+}
+
+.categories-inner form input[type=text] {
+	height: 50px;
+	border: none;
+	border-bottom: 1px solid #90ee90;
+	margin-bottom: 8px;
+	padding: 0px 8px;
+}
+
+.categories-inner form input[type=submit] {
+	border: none;
+	background-color: $primary-color;
+	height: 40px;
+	color: #fff;
+	font-size: 17px;
+}
+
+.categories-inner ul.categories-list {
+	list-style: none;
+	margin-top: 15px;
+	overflow-y: scroll;
+	height: 500px;
+}
+
+.categories-inner ul.categories-list li {
+	padding: 10px 40px;
+	background-color: $secondary-color;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.categories-inner ul.categories-list i {
+	padding-right: 8px;
+	cursor: pointer;
+	color: #000;
+}
+
+/** Settings **/
+.settings {
+	@extend .page-setup;
+}
+
+.settings .settings-inner {
+	@extend .page-inner-setup;
+}
+
+
+.settings-inner .admin-profile {
+	text-align: center;
+}
+
+.settings-inner .admin-profile h6 {
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+.settings-inner .left {
+	// background-color: #f5f5f5;
+	margin-bottom: 15px;
+	padding: 15px 10px;
+}
+
+.settings-inner .left ul {
+	list-style: none;;
+}
+
+.settings-inner .left ul li i.fa.fa-tachometer, i.fa.fa-gift, i.fa.fa-shopping-basket, i.fa.fa-cog, i.fa.fa-line-chart {
+	width: 15%;
+}
+
+.settings-inner .left ul li {
+	font-size: 20px;
+	padding: 10px 5px;
+	cursor: pointer;
+}
+
+.settings-inner .left ul li .link {
+	color: #000;
+}
+
+.settings-inner .left ul li:hover {
+	background-color: $secondary-color;
+	border-radius: 5px; 
+}
+
+.settings-inner .right h2 {
+	padding-bottom: 20px;
+}
+
+.settings-inner .col-md-3 {
+	margin-bottom: 10px;
+}
+
+/** Single Order **/
+.single-order {
+	@extend .page-setup;
+}
+
+.single-order .single-order-inner {
+	@extend .page-inner-setup;
+}
+
+.single-order-inner .admin-profile {
+	text-align: center;
+}
+
+.single-order-inner .admin-profile h6 {
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+.single-order-inner .left {
+	// background-color: #f5f5f5;
+	margin-bottom: 15px;
+	padding: 15px 10px;
+}
+
+.single-order-inner .left ul {
+	list-style: none;
+}
+
+.single-order-inner .left ul li i.fa.fa-tachometer, i.fa.fa-gift, i.fa.fa-shopping-basket, i.fa.fa-cog, i.fa.fa-line-chart, i.fa.fa-list-alt {
+	width: 15%;
+}
+
+.single-order-inner .left ul li{
+	font-size: 20px;
+	padding: 10px 5px;
+	cursor: pointer;
+	color: #000;
+}
+
+.single-order-inner .left ul li .link {
+	color: #000;
+}
+
+.single-order-inner .left ul li:hover {
+	background-color: $secondary-color;
+	border-radius: 5px; 
+}
+
+.single-order-inner .right ul {
+	list-style: none;
+	margin-bottom: 5px;
+}
+
+.single-order-inner .right ul li {
+	display: inline-block;
+	padding-right: 10px;
+}
+
+.single-order-inner .right ul li h4 {
+	font-weight: 400;
+}
+
+.single-order-inner .right ul li span.order-amount-summary {
+	padding: 3px 8px;
+	background-color: #f5f5f5;
+	border-radius: 5px;
+	color: #000;
+}
+
+.single-order-inner .right ul li span.order-id {
+	padding: 3px 8px;
+	background-color: #90ee90;
+	border-radius: 5px;
+	color: $secondary-color;
+}
+
+.single-order-inner .right h6 {
+	margin-bottom: 10px;
+}
+
+.single-order-inner .right h6 span {
+	font-size: 13px;
+	padding-left: 5px;
+	color: grey;
+}
+
+.single-order-inner .right h3 {
+	margin: 15px 0px;
+}
+
+.single-order-inner .right .summary-info-box {
+	width: 100%;
+	height: 100px;
+	background-color: #f5f5f5;
+	padding: 5px 10px;
+	box-sizing: border-box;
+}
+
+.single-order-inner .right .summary-info-box h6 {
+	font-weight: 300;
+	padding: 5px;
+	border-bottom: 1px solid #000;
+}
+
+.single-order-inner .account ul {
+	list-style: none;
+}
+
+.single-order-inner .account ul li {
+	display: block;
+}
+
+.single-order-inner .account ul li ul li {
+	display: inline-block;
+}
+.single-order-inner .account ul li ul li:first-child {
+	width: 50%;
+}
+
+/** Add Product **/
+.add-product {
+	@extend .page-setup;
+}
+
+.add-product .add-product-inner {
+	@extend .page-inner-setup;
+}
+
+.add-product-inner .admin-profile {
+	text-align: center;
+}
+
+.add-product-inner .admin-profile h6 {
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+.add-product-inner .left {
+	// background-color: #f5f5f5;
+	margin-bottom: 15px;
+	padding: 15px 10px;
+}
+
+.add-product-inner .left ul {
+	list-style: none;
+}
+
+.add-product-inner .left ul li i.fa.fa-tachometer, i.fa.fa-gift, i.fa.fa-shopping-basket, i.fa.fa-cog, i.fa.fa-line-chart {
+	width: 15%;
+}
+
+.add-product-inner .left ul li{
+	font-size: 20px;
+	padding: 10px 5px;
+	cursor: pointer;
+	color: #000;
+}
+
+.add-product-inner .left ul li .link {
+	color: #000;
+}
+
+.add-product-inner .left ul li:hover {
+	background-color: $secondary-color;
+	border-radius: 5px; 
+}
+
+.add-product-inner .right h2 {
+	padding-bottom: 8px;
+	margin-bottom: 8px;
+	border-bottom: 1px solid #f5f5f5;
+}
+
+.add-product-inner .new {
+	font-size: 18px;
+	padding: 5px 10px;
+	color: #fff;
+	border-radius: 5px;
+	background-color: $secondary-color;
+	cursor: pointer;
+}
+
+/** Edit Product **/
+.add-product .edit-delete {
+	padding: 5px 8px;
+	border-radius: 5px;
+	background-color: red;
+	color: #fff;
+	font-size: 17px;
+	cursor: pointer;
+	transition: 0.5s all;
+}
+
+.add-product .edit-delete:hover {
+	color: #f5f5f5
+}
+
+.add-product .edit-delete .fa.fa-trash {
+	font-size: 20px;
+}
+
+/** Admin Login **/
+.admin-login {
+	width: 100%;
+	height: 100vh;
+	background-color: $bg-color;
+}
+
+.admin-login .admin-inner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 40%;
+	min-height: 40%;
+	background-color: #fff;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.admin-login h2 {
+	padding-bottom: 10px;
+	font-weight: 600;
+}
+
+@media screen and (max-width: 580px) {
+	.admin-login .admin-inner {
+		min-width: 90%;
+	}
+}
+
+.admin-inner form .username, .password {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 15px;
+	padding: 0px 8px;
+	border: 1px solid $primary-color;
+	border-radius: 5px;
+}
+
+.admin-inner form .submit {
+	background: #f953c6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	border: none;
+	width: 100%;
+	height: 50px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+/** Users **/
+
+.users {
+	@extend .page-setup;
+}
+
+.users .users-inner {
+	@extend .page-inner-setup;
+}
+
+.users-inner .admin-profile {
+	text-align: center;
+}
+
+.users-inner .admin-profile h6 {
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+.users-inner .left {
+	// background-color: #f5f5f5;
+	margin-bottom: 15px;
+	padding: 15px 10px;
+}
+
+.users-inner .left ul {
+	list-style: none;
+}
+
+.users-inner .left ul li i.fa.fa-tachometer,
+ i.fa.fa-gift, i.fa.fa-shopping-basket, 
+i.fa.fa-cog, i.fa.fa-line-chart, i.fa.fa-user {
+	width: 15%;
+}
+
+.users-inner .left ul li{
+	font-size: 20px;
+	padding: 10px 5px;
+	cursor: pointer;
+	color: #000;
+}
+
+.users-inner .left ul li .link {
+	color: #000;
+}
+
+.users-inner .left ul li:hover {
+	background-color: $secondary-color;
+	border-radius: 5px; 
+}
+
+.users-inner .right h2 {
+	padding-bottom: 15px;
+}
+
+.users-inner .add-user {
+	padding: 10px 15px;
+	border-radius: 5px;
+	background-color: $secondary-color;
+	color: #fff;
+	font-size: 18px;
+}
+
+/** Add User **/
+
+.add-user {
+	@extend .page-setup;
+}
+
+.add-user .add-user-inner {
+	@extend .page-inner-setup;
+}
+
+.add-user-inner .admin-profile {
+	text-align: center;
+}
+
+.add-user-inner .admin-profile h6 {
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+.add-user-inner .left {
+	// background-color: #f5f5f5;
+	margin-bottom: 15px;
+	padding: 15px 10px;
+}
+
+.add-user-inner .left ul {
+	list-style: none;
+}
+
+.add-user-inner .left ul li i.fa.fa-tachometer,
+ i.fa.fa-gift, i.fa.fa-shopping-basket, 
+i.fa.fa-cog, i.fa.fa-line-chart, i.fa.fa-user {
+	width: 15%;
+}
+
+.add-user-inner .left ul li{
+	font-size: 20px;
+	padding: 10px 5px;
+	cursor: pointer;
+	color: #000;
+}
+
+.add-user-inner .left ul li .link {
+	color: #000;
+}
+
+.add-user-inner .left ul li:hover {
+	background-color: $secondary-color;
+	border-radius: 5px; 
+}
+
+.add-user-inner h2 {
+	padding-bottom: 20px;
+}
