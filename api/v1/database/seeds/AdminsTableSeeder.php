@@ -14,16 +14,16 @@ class AdminsTableSeeder extends Seeder
     {
         $admins = array(
             array(
-                'full_name' => "samba sallah",
-                'email' => 'sambasallah10@gmail.com',
-                'username' => 'sambasallah',
-                'password' => 'y7enqxal'
+                'full_name' => "webster avosa",
+                'email' => 'websterb17@gmail.com',
+                'username' => 'webster',
+                'password' => '@365office'
             ),
             array(
                 'full_name' => "admin admin",
                 'email' => 'admin@gmail.com',
                 'username' => 'admin',
-                'password' => 'y7enqxal'
+                'password' => '@365office'
             )
             );
 
