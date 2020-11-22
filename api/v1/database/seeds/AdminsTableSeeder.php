@@ -17,13 +17,13 @@ class AdminsTableSeeder extends Seeder
                 'full_name' => "webster avosa",
                 'email' => 'websterb17@gmail.com',
                 'username' => 'webster',
-                'password' => '@365office'
+                'password' => '1234'
             ),
             array(
                 'full_name' => "admin admin",
                 'email' => 'admin@gmail.com',
                 'username' => 'admin',
-                'password' => '@365office'
+                'password' => '4321'
             )
             );
 
