@@ -14,10 +14,10 @@ class CategoriesTable extends Seeder
     {
         //
         $categories = [
-            ['category_name' => 'Fashion'],
-            ['category_name' => 'Technology'],
-            ['category_name' => 'Groceries'],
-            ['Category_name' => 'Accessories']
+            ['category_name' => 'Smartphones'],
+            ['category_name' => 'Laptops'],
+            ['category_name' => 'Accessories'],
+            ['Category_name' => 'Ex UK']
         ];
 
         foreach($categories as $category) {

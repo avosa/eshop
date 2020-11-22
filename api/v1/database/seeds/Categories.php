@@ -13,10 +13,10 @@ class Categories extends Seeder
     public function run()
     {
         $categories = [
-            ['category_name' => 'Technology'],
-            ['category_name' => 'Fashion'],
-            ['category_name' => 'Groceries'],
-            ['category_name' => 'Household Material']
+            ['category_name' => 'Smartphones'],
+            ['category_name' => 'Laptops'],
+            ['category_name' => 'Accessories'],
+            ['Category_name' => 'Ex UK']
         ];
 
         foreach($categories as $category) {
